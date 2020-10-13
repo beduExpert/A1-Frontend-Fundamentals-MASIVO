@@ -1,4 +1,4 @@
-# Agregando el contenido de la barra de navegación
+# Aplica el margen utilizando el atajo de la propiedad `margin`
 
 ## REQUISITOS
 - Tener Git Bash si usas Windows.
@@ -6,47 +6,24 @@
 
 ## INSTRUCCIONES
 
-Teniendo en cuenta lo siguiente:
+¿Sabías que la propiedad `margin` puede asignar el valor de los 4 lados en una
+sola línea? Si es la primera vez que escuchas esto, no dudes en _googleaerlo_ y
+experimentar cambiando las 3 propiedades que hemos escrito previamente por una
+sola. Luego imagina, pregunta e investiga que otras propiedades tienen el mismo
+atajo.
 
-- El link de la imagen del logo es: `https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg`
-- El menú de navegación se puede lograr con una lista desordenada que en HTML se
-  representa a través de la etiqueta [`<ul></ul>`](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/ul).
-- La acción `Sign In` es un link que apunta a la dirección `/login` y la acción
-  de `Start free trial` es un botón.
 
-¿Cómo agregarías el contenido de la barra de navegación?
+# Aplica el margen al contenido
 
-> Ten en cuenta que no se verá igual que la página, y eso está bien, ya que nos
-> estamos enfocando solo en la estructura y luego le daremos los estilos
-> necesarios para darle la apariencia esperada.
+## REQUISITOS
+- Tener Git Bash si usas Windows.
 
-<details>
-  <summary>Solución</summary>
+## INSTRUCCIONES
 
-  ### Posible solución: Agregando el contenido de la barra de navegación
-
-  ```html
-  <header>
-    <!-- Logo con link a la página principal -->
-    <a href="/">
-      <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha"/>
-    </a>
-    <!-- Menú de navegación -->
-    <nav>
-      <ul>
-        <li>Platform</li>
-        <li>Pricing</li>
-        <li>Customers</li>
-        <li>Resources</li>
-        <li>About</li>
-      </ul>
-    </nav>
-    <!-- Contenedor de acciones de usuario -->
-    <div>
-      <a>Sign In</a>
-      <button>Start free trial</button>
-    </div>
-  </header>
-  ```
-</details>
+El contenido que agregamos en la sesión anterior también tiene una separación de
+la barra de navegación. Esto podríamos solucionarlo agregando un margen a la
+primera etiqueta de nuestro contenido (que sería el `h1`), sin embargo, esto no
+sería óptimo porque si en algún momento insertáramos algo antes del `h1` nuestro
+margen no funcionaría como deseamos. Para evitar esto, podemos usar un contenedor
+que englobe a todo nuestro contenido y aplicar el margen a dicho contenedor.
 

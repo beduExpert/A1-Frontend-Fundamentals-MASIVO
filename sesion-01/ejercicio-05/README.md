@@ -1,3 +1,4 @@
+
 # Agregando color al texto principal
 
 ## REQUISITOS
@@ -21,3 +22,12 @@ h1 {
 
 Recarga tu navegador para que puedas ver los cambios reflejados. ¡Ahora ya tienes
 tu texto con color!
+
+
+
+
+
+
+
+
+

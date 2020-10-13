@@ -1,4 +1,18 @@
-# Obteniendo cambios con `git fetch` y `git merge`
+## Creando nuestras Ramas para versiones de nuestro proyecto 
+
+1. Escribimos `git branch` para saber en que rama estoy y cuantas ramas tengo 
+2. Escribimos `git branch NombredeRama` para crear nuestras.
+3. Escribimos `git checkout Nombre de la rama `para cambiarnos de rama. 
+
+# Obteniendo cambios con git `git pull`  `git fetch` y `git merge`
+
+## git pull 
+
+1. Usamos git pull para obetener (jalar) los cambios de un rama específica 
+
+git pull nos trae los cambios y los actuliza , en un contexto teorico git pull contiene dentro de si mismo las acciones de `git fetch y git merge `
+
+
 
 Como siempre que queremos aplicar cambios relacionados con Git, es necesario que
 nos movamos en la terminal hacia la carpeta de nuestro proyecto. Una vez dentro,
