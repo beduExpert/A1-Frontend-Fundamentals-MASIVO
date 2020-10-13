@@ -9,12 +9,16 @@ En esta sesión aprenderás:
 
 - Interactuar con la terminal para crear una estructura de archivos para tu
   proyecto.
+  
 - Crear una estructura base de tu página web a partir del uso de etiquetas de
   HTML.
+
 - Personalizar la apariencia de tu página a través de cambios que se aplican a
   través de CSS.
+
 - Usar comandos de GIT para almacenar tus cambios realizados en la red social
   más usada por lxs programadorxs (Github).
+
 - Desplegar tu página para que sea visible a todo el mundo de una manera
   sencilla y gratuita.
 
