@@ -7,10 +7,16 @@ detalle de lo que estás a punto de aprender.
 
 En esta sesión aprenderás:
 
+- Crear ramas y jalar cambios entre versiones  
+
 - Agregar contenido de video a nuestra web.
+
 - Cambiar el posicionamiento de los elementos HTML.
+
 - Estructurar los elementos dentro de un contenedor de manera flexible.
+
 - Usar comandos de git para obtener cambios realizados por terceros.
+
 - Desplegar los cambios a nuestra página web hosteada en Netlify.
 
 ## Contenido
