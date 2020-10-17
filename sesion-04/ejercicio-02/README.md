@@ -1,122 +1,211 @@
-# Agregando características principales de Matcha
+## Propiedades de alineación Flexbox
 
-¡Empecemos! Vamos a trabajar en la sección de características principales de
-nuestra web.
+1. justify-content: Se utiliza para alinear los ítems del eje principal (por defecto, el horizontal).
+ 
+    Valor	                         Descripción
 
-![Características principales](../assets/features.png)
+ - flex-start     	Agrupa los ítems al principio del eje principal.
+ 
+ - flex-end	        Agrupa los ítems al final del eje principal.
 
-Aprovechando que su apariencia puede ser construida a partir del uso de filas y
-columnas, haremos uso de Grid CSS para llevar a cabo esta parte de la web.
+ - center	        Agrupa los ítems al centro del eje principal.
 
-## Definiendo el contenedor
+ - space-between	Distribuye los ítems dejando el máximo espacio para separarlos.
 
-En Grid CSS, al igual que en flexbox existe una diferencia entre el _grid container_
-y los _grid items_. Esto hace refencia a que el contenedor (al que aplicaremos
-la propiedad de CSS `display` con valor `grid`) será el _grid container_,
-mientras que los elementos que estén contenidos en él, serán los _grid items_.
+ - space-around	    Distribuye los ítems dejando el mismo espacio alrededor de ellos (izq/dcha).
 
-Definiendo nuestro contenido se verá algo así:
+ - space-evenly	    Distribuye los ítems dejando el mismo espacio (solapado) a izquierda y derecha.
+
+
+
+
+ 2.  align-items Usada para alinear los ítems del eje secundario (por defecto, el vertical).
+
+
+
+
+        Valor	      Descripción
+
+ - flex-start	 Alinea los ítems al principio del eje secundario.
+
+ - flex-end	     Alinea los ítems al final del eje secundario.
+
+ - center    	 Alinea los ítems al centro del eje secundario.
+
+ - stretch	     Alinea los ítems estirándolos de modo que cubran desde el inicio hasta el finqs del contenedor.
+
+- baseline	     Alinea los ítems en el contenedor según la base del contenido de los ítems del contenedor.
+
+
+
+
+
+3. align-content:  servirá para alinear cada una de las líneas del contenedor multilinea
+
+
+
+    Valor	                      Descripción
+
+- flex-start	         Agrupa los ítems al principio del eje principal.
+
+- flex-end	             Agrupa los ítems al final del eje principal.
+
+- center	             Agrupa los ítems al centro del eje principal.
+
+- space-between	         Distribuye los ítems desde el inicio hasta el final.
+
+- space-around	         Distribuye los ítems dejando el mismo espacio a los lados de cada uno.
+
+- stretch	             Estira los ítems para ocupar de forma equitativa todo el espacio.
+
+
+
+Veamos unos ejemplos de los valores de las propiedades de Flexbox con este codigo :
 
 ```html
-<!-- Contenido de publicidad viene antes de esta sección -->
-<section class="features"></section>
-<!-- Contenido de casos de éxito vienen después -->
+<body>
+  
+   <div class="container">  
+        <div class="item">1</div> 
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div> 
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+  
+</body>
 ```
 
+
+
+
 ```css
-.features {
-  display: grid;
+
+.container{ 
+  display: flex;
+  width: 100%;
+  height: 200px;
+  
+  align-items: flex-end;
+  
+  background: rgb(129, 178, 218);
+    
+
+}
+
+.container > .item {
+
+    background: #777;
+    width: 20%;
+    height: 30px;
+   
+
+}
+
+
+
+
+
+
 }
 ```
 
-De esta manera, lograremos crear la sección inicial donde pondremos nuestra
-primera grid que contendrá a las características principales de nuestro sitio.
+Veamos unos ejemplos de los valores de las propiedades de Flexbox con este codigo para cambiar la dimension de nuestros items  :
 
-## Agregando los grid items
 
-En nuestro web, contamos con 4 características principales, distribuidas en 2
-columnas y 2 filas, comencemos por definir dichos elementos.
+usaremos este codigo de html para el ejercicio de cada una de las propiedades;
 
+ 
 ```html
-<!-- Contenido de publicidad viene antes de esta sección -->
-<section class="features">
-  <article>Característica 1</article>
-  <article>Característica 2</article>
-  <article>Característica 3</article>
-  <article>Característica 4</article>
-</section>
-<!-- Contenido de casos de éxito vienen después -->
+<body>
+
+<div id="main" class="main">
+   <div style="background-color:coral;"> 50px </div>
+   <div style="background-color:lightblue;"> 100px</div>
+   <div style="background-color:khaki;">50px</div>
+   <div style="background-color:pink;"> 50px</div>
+   <div style="background-color:rgb(218, 33, 64);"> 50px</div>
+   <div style="background-color:lightgrey;">50px</div>
+ </div>
+
+  
+   
+  
+</body>
 ```
 
-Si solo agregamos los contenedores de nuestras características, estas se
-mostrarán sin ninguna apariencia en particular (como si el `display: grid` que
-agregamos no funcionara) y en realidad es el resutlado esperado, puesto que,
-es necesario indicar cómo se van a distribuir los elementos en la grid.
 
-Para esto, podemos usar las propiedades `grid-template-columns` y `grid-template-rows`,
-dichas propiedades nos permite especificar la cantidad y tamaño de cada una de
-las columnas y filas respectivamente. Veamos un ejemplo, necesitamos definir que
-tenemos 2 columnas, imaginemos que sean de `300px`:
+## Propiedades para 
+
+
+
+1. flex grow aumenta el tamaño de un item a su mismo tamaño las cantidad qu le indiquemos 
+
 
 ```css
-.features {
-  display: grid;
-  grid-template-columns: 300px 300px;
+
+   #main div:nth-of-type(1) {           
+     
+    flex-grow: 1;      
+   
+    }
+
+   #main div:nth-of-type(2) {
+    
+    flex-grow: 3;
+    
+    }
+
+   #main div:nth-of-type(3) {
+    
+    flex-grow: 1;
+
 }
-```
 
-:::tip
+   #main div:nth-of-type(4) {
+    
+    flex-grow: 1;
+}
 
-Como tal vez te habrás percatado, la propiedad `grid-template-columns` está
-siendo aplicada al _grid container_ y no a cada _grid item_. Similar a como
-vimos en Flexbox, es necesario saber que la apariencia general del contenido la
-definimos en los estilos del contenedor.
+ ```
 
-Adicionalmente, hemos definimos 2 veces `300px` para indicar que tendremos 2
-columnas de `300px` y de esta manera el contenido toma forma similar a la que
-deseamos.
 
-:::
 
-Probablemente te preguntarás, ¿qué pasaría si tuviéramos 5 columnas en vez de 2
-del mismo tamaño, tendríamos que escribir 5 veces `300px`? Para esto, CSS nos
-provee de una función llamada `repeat(cantidad, tamaño)` que podemos usar para
-definir cuántas veces queremos repetir un mismo tamaño:
+2.  flex-shrink     Decremente su medida inicial el numero de veces que se le indique 
 
 ```css
-.features {
-  display: grid;
-  grid-template-columns: repeat(2, 300px);
+#main div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px;
 }
-```
 
-Hasta aquí todo bien, sin embargo, estamos de acuerdo que no siempre vamos a
-utilizar un tamaño fijo para indicar el ancho que nuestras columnas van a ocupar.
-Si bien, podemos usar las unidades relativas como `%`, `em/rem`, `vw/vh`, etc.,
-CSS Grid nos provee con una unidad llamada `fr` (fracción) que se encarga de
-calcular dinámicamente el espacio disponible y dividirlo entre los diversos
-elementos. Veamos algunos ejemplos:
+#main div:nth-of-type(2) {
+    flex-shrink: 3;
+  }
+ ```
+
+
+
+
+3. flex-basis  Establezca la longitud inicial del item 
 
 ```css
-.features {
-  display: grid;
-  grid-template-columns: 500px 1fr;
-}
+
+#main div {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50px;
+  }
+
+  
+  #main div:nth-of-type(2) {
+    flex-basis: 100px;
+  }
+
+
 ```
 
-En este caso, estamos definiendo 2 columnas, la primera con un ancho fijo de
-`500px` y la segunda columna con el resto de espacio disponible en la pantalla.
-¿Qué pasa si quisiéramos divisiones que ocupen el mismo espacio?
 
-```css
-.features {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-```
 
-Declarando que cada columna ocupe _una fracción_ del espacio disponible, hacemos
-que cada una ocupe la mitad del espacio disponible, de esta manera si tuviéramos
-cuatro columnas cada una con el ancho de `1fr`, cada columna estará tomando un
-ancho del 25% del espacio disponible o 1/4 (depende de que notación les guste y
-entiendan mejor).

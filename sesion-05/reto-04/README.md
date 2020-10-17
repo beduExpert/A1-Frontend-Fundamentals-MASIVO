@@ -1,20 +1,16 @@
-# Cambiando el flujo del formulario de registro en la sección de publicidad
+# Mejorando la experiencia móvil de las tarjetas de características
 
 ## REQUISITOS
 - Tener Git Bash si usas Windows.
-- Tener conocimientos básicos de HTML
 - Tener conocimientos básicos de CSS (Flexbox)
 - Tener conocimientos básicos de CSS (Gid)
 
 ## INSTRUCCIONES
 
-El formulario está siendo desbordado debido a que está alineado en un flujo 
-horizontal (`row`), para mejorar esta experiencia es necesario volverlo vertical.
-¿Cómo hacemos?
-
-:::tip
-El contenedor del formulario usa Flexbox.
-:::
+Hasta este punto tenemos las características alineadas correctamente, sin embargo,
+todavía no dan una buena apariencia, debido al ancho que ocupan en la pantalla 
+se ve reducido y también porque la imagen no da una buena experiencia en este
+tamaño de pantalla. ¿Cómo la mejoramos?
 
 
 <details>
@@ -22,23 +18,16 @@ El contenedor del formulario usa Flexbox.
 
 ```css
 @media (max-width: 575px) {
-  .publish > form {
-    flex-direction: column;
+  /** Estilos de portada principal y sección de publicidad */
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
   }
-
-  .publish > form > div {
-    height: 50px;
-    margin-top: 10px;
-  }
-
-  .publish > form > div > input {
-    width: 65%;
+  
+  .feature-image {
+    display: none;
   }
 }
 ```
-
-Adicionalmente agregamos algunos estilos para mejorar la apariencia y ancho de
-nuestro formulario.
-
 </details>
-

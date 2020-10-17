@@ -1,43 +1,94 @@
-# Obteniendo cambios con `git pull`
+## FlexBox 
 
-Como siempre que queremos aplicar cambios relacionados con Git, es necesario que
-nos movamos en la terminal hacia la carpeta de nuestro proyecto. Una vez dentro,
-vamos a realizar los siguientes pasos:
 
-1. Escribiremos `git pull <nombre-remoto> <nombre-rama>` para traer los cambios
-   que se realizaron desde otro ordenador, ya sea cambios que tu hiciste o que
-   alguien te mandó un Pull Request y terminaste aceptando. Ten en cuenta que
-   normalmente por defecto el nombre del remoto es `origin` (lo puedes verificar
-   ejecutando `git remote -v`) y si no creaste ninguna rama, tu nombre de la
-   rama será `master`.
+ - Veremos las diferentes propiedades que nos ayudaran a entender mejor FlexBox
 
-   En caso de que no tengamos ningún cambio realizado en Github, nos mostrará
-   algo similar a:
 
-   ```bash
-   # Este comando arrojará algo similar a las siguientes líneas
-   $ git pull origin master
-   From github.com:<nombre-usuario>/<nombre-repositoio>
-    * branch            master    -> FETCH_HEAD
-   Already up to date.
-   ```
+##  Dirección de los ejes 
 
-   Mientras que si tenemos algún cambio que no está en nuestra computadora, se
-   verá algo como:
+ 1. flex-direction	row | row-reverse | column | column-reverse	Cambia la orientación del eje principal.
 
-   ```bash
-   # Este comando arrojará algo similar a las siguientes líneas
-   $ git pull origin master
-   remote: Enumerating objects: 74, done.
-   remote: Counting objects: 100% (74/74), done.
-   remote: Compressing objects: 100% (2/2), done.
-   remote: Total 135 (delta 72), reused 72 (delta 72), pack-reused 61
-   Receiving objects: 100% (135/135), 250.44 KiB | 1.41 MiB/s, done.
-   Resolving deltas: 100% (82/82), completed with 35 local objects.
-   From github.com:<nombre-usuario>/<nombre-rerpositorio>
-    * branch              master        -> FETCH_HEAD
-      58454bc1..00197cd7  master        -> origin/master
-   Updating 58454bc1..00197cd7
-   Fast-forward
-    ruta/al/archivo/modificado.html          |    6 +-
-   ```
+  Valor	                          Descripción
+
+- row	            Establece la dirección del eje principal en horizontal.
+
+- row-reverse	    Establece la dirección del eje principal en horizontal (invertido).
+
+- column	        Establece la dirección del eje principal en vertical.
+
+- column-reverse	Establece la dirección del eje principal en vertical (invertido).
+
+
+
+ 2. flex-wrap	nowrap | wrap | wrap-reverse	Evita o permite el desbordamiento (multilinea).
+
+   Valor	                           Descripción
+
+-  nowrap	           Establece los ítems en una sola línea (no permite que se desborde el contenedor).
+
+-  wrap	               Establece los ítems en modo multilínea (permite que se desborde el contenedor).
+
+-  wrap-reverse	       Establece los ítems en modo multilínea, pero en dirección inversa.
+
+
+Agamos un ejercicio con este codigo para ver las propiedades de flexbox 
+
+```html
+<body>
+  
+   <div class="container">  
+        <div class="item">1</div> 
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div> 
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+  
+</body>
+```
+
+
+
+
+```css
+.container{ 
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background: rgb(129, 178, 218);
+    
+
+}
+
+.container > .item {
+
+    background: #777;
+    width: 50%;
+    height: 50px;
+
+
+
+
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

@@ -1,18 +1,16 @@
-# Cambiando la fuente de nuestro título principal
+# Quitando separación superior del título
 
 ## REQUISITOS
 - Tener Git Bash si usas Windows.
+- Tener conocimientos básicos de HTML
 - Tener conocimientos básicos de CSS (Flexbox)
 - Tener conocimientos básicos de CSS (Gid)
 
 ## INSTRUCCIONES
 
-El título de nuestra página está tomando demasiado espacio y no se ve bien, esto
-se debe a que tiene una fuente fija de `60px` para el ejemplo que usamos en esta
-guía. ¿Cómo harías para cambiarle de fuente a una que funcione mejor? 
-
-> Nota: En nuestro caso, terminaremos usando una fuente de 30px pero puedes usar
-> el tamaño que prefieras.
+Si nos fijamos en la página original, el título no queda tan seeparado del borde
+superior, esto se debe a la misma razón que el caso anterior, ¿cómo harías para
+mejorar su apariencia?
 
 <details>
   <summary>Posible Solución</summary>
@@ -22,6 +20,10 @@ guía. ¿Cómo harías para cambiarle de fuente a una que funcione mejor?
   .navbar,
   .actions {
     display: none;
+  }
+
+  main {
+    margin-top: 130px;
   }
 
   h1 {

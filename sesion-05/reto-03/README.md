@@ -1,4 +1,4 @@
-# Quitando separación superior del título
+# Cambiando el flujo del formulario de registro en la sección de publicidad
 
 ## REQUISITOS
 - Tener Git Bash si usas Windows.
@@ -8,29 +8,37 @@
 
 ## INSTRUCCIONES
 
-Si nos fijamos en la página original, el título no queda tan seeparado del borde
-superior, esto se debe a la misma razón que el caso anterior, ¿cómo harías para
-mejorar su apariencia?
+El formulario está siendo desbordado debido a que está alineado en un flujo 
+horizontal (`row`), para mejorar esta experiencia es necesario volverlo vertical.
+¿Cómo hacemos?
+
+:::tip
+El contenedor del formulario usa Flexbox.
+:::
+
 
 <details>
   <summary>Posible Solución</summary>
 
 ```css
 @media (max-width: 575px) {
-  .navbar,
-  .actions {
-    display: none;
+  .publish > form {
+    flex-direction: column;
   }
 
-  main {
-    margin-top: 130px;
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
   }
 
-  h1 {
-    font-size: 30px;
+  .publish > form > div > input {
+    width: 65%;
   }
 }
 ```
+
+Adicionalmente agregamos algunos estilos para mejorar la apariencia y ancho de
+nuestro formulario.
 
 </details>
 
