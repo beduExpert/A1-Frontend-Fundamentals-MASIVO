@@ -7,9 +7,14 @@ detalle de lo que estás a punto de aprender.
 
 En esta sesión aprenderás:
 
+- Usar diferentes propiedades de Felxbox
+
 - Estructurar elementos en formato de filas y columnas.
+
 - Posicionar elementos en base a la posición de otros de manera flexible.
+
 - Usar comandos de git para obtener cambios realizados por terceros.
+
 - Desplegar los cambios a nuestra página web hosteada en Netlify.
 
 ## Contenido
