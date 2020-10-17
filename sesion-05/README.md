@@ -9,9 +9,12 @@ En esta sesión aprenderás:
 
 - Adaptar nuestro contenido para que pueda ser visible en dispositivos más 
   pequeños.
+
 - Personalizar la apariencia de acuerdo al dispositivo desde el que se ve 
   nuestra web.
+
 - Resolver conflictos de git cuando obtenemos cambios realizados por terceros.
+
 - Desplegar los cambios a nuestra página web hosteada en Netlify.
 
 ## Contenido

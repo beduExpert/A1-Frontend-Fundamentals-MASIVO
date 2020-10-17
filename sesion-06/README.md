@@ -1,4 +1,4 @@
-# Sesión: Agregando filas y columnas con CSS Grid
+# Sesión: Bootstrap
 
 Sigue el contenido a continuación durante clase para que no te pierdas ningún
 detalle de lo que estás a punto de aprender.
@@ -8,7 +8,9 @@ detalle de lo que estás a punto de aprender.
 En esta sesión aprenderás:
 
 - Usar componentes de Bootstrap para nuestra página.
+
 - Reutilizar clases de Bootstrap.
+
 - Desplegar los cambios a nuestra página web hosteada en Netlify.
 
 ## Contenido
