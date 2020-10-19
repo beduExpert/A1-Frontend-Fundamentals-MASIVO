@@ -26,11 +26,11 @@ contacto.
 
 ## 📋 Temario
 
-- [`Terminal y Git`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-01)
-- [`HTML`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-02)
-- [`CSS`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-03)
-- [`Responsive Design`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-04)
-- [`CSS Frameworks`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-05)
-- [`Preprocesadores de CSS`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-06)
-- [`Email development`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-07)
-- [`Deploy de un sitio estático`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-08)
+- [`Sesión 01: Terminal y Git`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-01)
+- [`Sesión 02: HTML`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-02)
+- [`Sesión 03: CSS`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-03)
+- [`Sesión 04: Responsive Design`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-04)
+- [`Sesión 05: CSS Frameworks`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-05)
+- [`Sesión 06: Preprocesadores de CSS`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-06)
+- [`Sesión 07: Email development`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-07)
+- [`Sesión 08: Deploy de un sitio estático`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-08)
