@@ -24,7 +24,7 @@ Aun así, **no es el único editor existente**, a continuación te dejamos una l
 
 Siéntete libre se usar tu editor de código favorito 🤓
 
- ## Control de Versiones
+ ## Control de Versiones (Git)
 
 Nuestro proyecto irá tomando forma conforme vayamos aprendiendo conceptos nuevos y lo vayamos aplicando. En un entorno profesional, es muy común que queramos guardar un historial de cambios con el objetivo de que podamos volver en el tiempo y saber qué hicimos para solucionar algo en particular y/o desechar alguna porción de código porque ya no es necesaria. Además, trabajar en equipo se torna algo complicado cuando no tienes una forma de centralizar los cambios trabajados por separado.
 
