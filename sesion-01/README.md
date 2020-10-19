@@ -23,8 +23,8 @@ En esta sesión aprenderás:
 
 ## Prework
 
-Qué es Front-end y Back
 # Qué es Front-end y Back
+
 
 ![](https://gblobscdn.gitbook.com/assets%2F-M4zarNtpC-oiRgBYNwB%2F-MGpHhIkwF3Kaufu8PcG%2F-MGpIUqTbL1NYMMap7Hm%2FfrontEse.png?alt=media&token=61c569ed-4f14-4dab-89c8-263d9e878029)
 
