@@ -9,7 +9,7 @@ harán que tu flujo de desarrollo sea más rápido y profesional.
 
 # 🔧 Instalación
 
-A continucación encontraras como instalar las [`herramientas`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/blob/main/Instalación.md#instalación) que necesitaras para este curso.
+A continucación encontraras como instalar las [`herramientas`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/blob/main/Instalación.md) que necesitaras para este curso.
 
 
 # 💻 ¿Quién puede tomar este curso?
