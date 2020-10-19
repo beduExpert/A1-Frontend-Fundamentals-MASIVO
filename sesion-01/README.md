@@ -434,7 +434,7 @@ En la práctica quedará más claro. 😉
 ¿Pero para qué se usa GitHub? Bueno, en general, permite trabajar en colaboración con otras personas de todo el mundo, planificar proyectos y realizar un seguimiento del trabajo.
 GitHub es también uno de los repositorios online más grandes de trabajo colaborativo en todo el mundo.
 
-![](https://lh4.googleusercontent.com/lR6HWCiatlbCkeKyhfZrCSBYft9fMrWKV0DussNzxMCoQJnA_0e7wgKThgbcSwcHIT7rJvBEgN-9sCwt2Z6r5OLwlEdSoIaXOjtj_Uc3wPM8uLiIqXxV2_4f1bSALTsI1WJBEYuI)
+![](https://lh5.googleusercontent.com/gjwcIRa4PwZX5EZmrX-IyaXvKwa1zlx1cxR6Jz1IaZd6ZbHMhG9lOt4od5vp2xwRInAn5I9ph8CytZ1_vqkmqjmsF4iITwz-q9FMpwYdSV6dXnqvJd6XDb_jzquioHBFdxGEBuIL)
 
 💡**TIP:**
 
