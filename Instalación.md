@@ -4,7 +4,7 @@
 
 El objetivo es que tengas todo lo necesario en tu computador para poder llegar a desgastar los dedos en tu primera sesión  y no invertir tiempo en configurar de tu entorno de desarrollo.
 
- ## 💻 Editor de Texto
+ ## Editor de Texto
 
 Para llevar a cabo nuestro sitio web estaremos escribiendo código, palabras clave que parecen un idioma distinto al que hablamos y/o escribimos, para esto es común usar una herramienta que nos permita escribir dicho código y éstos a su vez agregan cierta funcionalidad que mejoran la legibilidad y productividad del desarrollo.
 
