@@ -1,4 +1,4 @@
-# Sesión: Estructura tu sitio
+# Sesión 01: Estructura tu sitio
 
 Sigue el contenido a continuación durante clase para que no te pierdas ningún
 detalle de lo que estás a punto de aprender.
@@ -17,151 +17,446 @@ En esta sesión aprenderás:
   través de CSS.
 
 - Usar comandos de GIT para almacenar tus cambios realizados en la red social
-  más usada por lxs programadorxs (Github).
+  más usada por los programadores (Github).
 
-- Desplegar tu página para que sea visible a todo el mundo de una manera
-  sencilla y gratuita.
+# Contenido
 
-## Contenido
+## Prework
 
-### Creando la estructura de tu proyecto
+Qué es Front-end y Back
+# Qué es Front-end y Back
 
-Todo desarrollo de proyecto web se hace a través de código, comandos que
-escribimos y que luego programas usan para traducirlo en algo que entienda la
-computadora. Sin embargo, es necesario entender que la computadora solo entiende
-1s y 0s, lo cual es muy complejo para nosotros como humanos entender. Debido a
-esto, se crearon lenguajes que actúan como intermediarios entre las computadoras
-y humanos. En esta sesión vamos a estar interactuando principalmente con 2
-lenguajes: **HTML y CSS**.
+![](https://gblobscdn.gitbook.com/assets%2F-M4zarNtpC-oiRgBYNwB%2F-MGpHhIkwF3Kaufu8PcG%2F-MGpIUqTbL1NYMMap7Hm%2FfrontEse.png?alt=media&token=61c569ed-4f14-4dab-89c8-263d9e878029)
 
-Debido a que son 2 lenguajes con propósitos distintos, es importante mantener un
-orden en los recursos que usaremos para construir nuestro sitio web, por lo cual
-es importante que usemos una estructura ordenada para tener un mejor control y
-entendimiento sobre como llevar a cabo nuestro proyecto. Dicha estructura la
-construiremos usando comandos en nuestra terminal que indicarán a la computadora
-que realice exactamente lo que nosotros le pidamos.
+# Cómo funciona la web
 
-#### Concepto: Terminal
+Todo desarrollo de proyecto web se hace a través de código, comandos que escribimos y que luego programas usan para traducirlo en algo que entienda la computadora.
+Sin embargo, es necesario entender que la computadora solo entiende 1s y 0s, lo cual es muy complejo para nosotros como humanos entender. Debido a esto, se crearon lenguajes que actúan como intermediarios entre las computadoras y humanos.
 
-La terminal es un programa de computadora que nos sirve para indicar acciones
-específicas que deseamos realizar. Todo lo que normalmente estamos acostumbrados
-a realizar a través de la interfaz gráfica que nos aparece en nuestras pantallas
-del computador y que con ayuda del _mouse_ y el _teclado_ podemos indicar lo que
-queremos hacer es posible realizarlo a través de **comandos** escritos en la
-terminal.
+En esta sesión vamos a estar interactuando principalmente con 2 lenguajes: HTML y CSS.
 
-Por ejemplo, normalmente para crear un directorio (carpeta), entrarías a un
-_Explorador de archivos_, y luego darías click hasta llegar a la ubicación donde
-se desea crear, presionas click derecho y le das nueva carpeta o dependiendo de
-la computadora que utilices encontrarás un ícono que te dará un acceso rápido a
-realizar exactamente esta misma acción.
+![](https://lh3.googleusercontent.com/qPtheawJ9_EdeqeWhT7MczEci5NhjobPZFxNzlRPyFu0PEzef2L4jBIoARA9nc2CIjKANBG0IbE2XIf9qbpfhBC75O12LMd-S7Xb5dQ0cbdF32fOoZxj3jMoNZFM4gdqgMBtB575)
 
-Si bien este flujo es normal y probablemente no lo dejemos de hacer por la
-rapidez, velocidad, costumbre, entre otros factores. Como programadorxs,
-acostumbramos a realizar las mismas acciones desde la terminal usando solo el
-teclado, esto por la rapidez y control que se siente sobre la computadora, pero
-también porque en algunas actividades que realizamos (sobre todo cuando
-configuramos servidores) no contamos con una interfaz gráfica y la terminal se
-vuelve nuestra única amiga.
+Debido a que son 2 lenguajes con propósitos distintos, es importante mantener un orden en los recursos que usaremos para construir nuestro sitio web, por lo cual es importante que usemos una estructura ordenada para tener un mejor control y entendimiento sobre cómo llevar a cabo nuestro proyecto.
 
-> TIP: La terminal también es comúnmente llamada como _consola_, _CLI_, _bash_
-> (no necesariamente bien usado), _shell_ (a pesar que no es lo mismo) y tal vez
-> te encontrarás con otro término dependiendo de la persona de quien lo escuches
-> o leas.
+Dicha estructura la construiremos usando comandos en nuestra terminal que indicarán a la computadora que realice exactamente lo que nosotros le pidamos.
 
-#### Guía: Creación de estructura de proyecto
+# Emulador de Terminal
 
-1. Abrir la terminal (tener en cuenta que la interfaz puede cambiar dependiendo
-   del sistema operativo que tengas).
+Un emulador de terminal es una aplicación que permite **virtualizar un intérprete de comandos** pero dentro de la propia interfaz gráfica. La mayoría de entornos de escritorio en **GNU/Linux** incorporan su propio emulador de terminal. Tienen la ventaja de posibilitar la interacción a través de la línea de comandos, pero sin necesidad de salir del entorno gráfico.
 
-2. Por defecto, cuando abrimos la terminal este se ubica en el directorio
-   principal (_home_) de nuestro computador. Podemos verificar cuál es dicho
-   directorio a través del comando `pwd`.
+En la figura de abajo tienes un ejemplo de como se ve el **emulador de Terminal de Ubuntu.**
 
-   ```bash
-   $ pwd # Present Working Directory
-   /Users/bedu
-   ```
+![](https://lh5.googleusercontent.com/Rv98V8N7bD9MJaEBJ5cZIoAMN5_My7QoHMXWbDlAvYBc3mlzgCyz0ZcBMI_pRbRDQjEUESFvu0OFwRqS5qTWRUTkm2MzmycdxQSnVNJYeNAWuHYW7hdSk2d--72uUJxAdY_THAmp)
 
-3. Una vez que sepas en donde te encuentras probablemente quieras ir a alguna
-   otra ubicación para crear la carpeta del proyecto. Digamos que queremos
-   crearlo dentro de la carpeta _Documents_ (el nombre puede variar dependiendo
-   del sistema operativo). El comanto que nos permite acceder o movernos de
-   ubicación es `cd`. A diferencia del comando anterior, éste es procedido por
-   el nombre del directorio al que nos queremos mover.
+El emulador de Terminal Linux es una **herramienta poderosa capaz** de realizar tareas de forma más rápida que mediante la interfaz gráfica del sistema operativo.
 
-   ```bash
-   $ cd Documents # "Change Directory" a Documents
-   ```
+### Ejemplo:
 
-   > TIP: Si quieres verificar que realmente se haya cambiado de ubicación,
-   > puedes usar el comando anterior para comprobarlo:
-   >
-   > ```bash
-   > $ pwd
-   > /Users/bedu/Documents
-   > ```
+Normalmente para crear un **directorio**(carpeta), entrarías a un Explorador de archivos, y luego damos click hasta llegar a la ubicación donde se desea crear, presionas click derecho y le das nueva carpeta o dependiendo de la computadora que utilices encontrarás un ícono que te dará un acceso rápido a realizar exactamente esta misma acción.
 
-4. Ahora que ya te encuentras donde deseas crear tu proyecto, es momento de
-   crear un directorio donde almacenarás todos los archivos que terminarás
-   utilizando. Para crear dicho directorio puedes usar el comando `mkdir`, al
-   igual que `cd`, este comando necesita que le indiques el nombre del
-   directorio que deseas crear.
+Como programadores, acostumbramos a realizar las mismas acciones desde la terminal usando solo el teclado, esto por la rapidez y control que se siente sobre la computadora, pero también porque en algunas actividades que realizamos (sobre todo cuando configuramos servidores) no contamos con una interfaz gráfica y la terminal se vuelve nuestra única amiga.
 
-   ```bash
-   $ mkdir matcha # Make Directory "matcha"
-   ```
+**A continuación te presentamos la terminal en diferentes Sistemas Operativos:**
 
-5. El comando que acabas de ejecutar, ha creado una carpeta llamada `matcha`,
-   una forma de verificar si se ha creado es listando todo lo que se encuentra
-   en la ubicación actual. Para esto, usa el comando `ls`.
+## Git Bash (Windows)
 
-   ```bash
-   $ ls # List
-   matcha   another-directory    some-file.txt
-   ```
+En windows, **no existe una terminal como tal**, pero tenemos una herramienta llamada **Git Bash** que es una aplicación para entornos de Microsoft Windows que ofrece una capa de emulación para una experiencia de líneas de comandos de Git.
 
-   > TIP: Dependiendo de la configuración de tu terminal, puede que te muestre
-   > las carpetas con un formato diferente al de los archivos, en caso contrario,
-   > lo puedes diferenciar debido a que la mayoría de archivos contienen un
-   > punto (`.`) seguido de la extensión (nombre particular, ejemplo: txt, doc,
-   > xls, etc) mientras que los directorios no.
+![](https://lh6.googleusercontent.com/zYuB5OVkgqEHW8b_Ph0auAtbBPO-5TTbsw0AUheXo-Hm-2wmf4S93xY4lX-8UqFo0Fi3i-qs1Q9PD4kopGnGDlXQ7Sd1Olx-ru_ZPi1A6z52Ehu9pIIXeQt8joRM4xpss55YRn8L)
 
-6. Una vez comprobado que tu directorio se creó correctamente, accede a él
-   (recuerda el comando `cd` para cambiar de ubicación y `pwd` para verificar).
-   Una vez dentro, el comando para crear archivos es `touch` seguido del nombre
-   del archivo que deseas usar. Para este caso, crearemos solo uno llamado
-   `index.html` (en este caso _.html_ es la extensión que usaremos).
+## Emulador de Terminal en Mac
 
-   ```bash
-   $ cd matcha # Change directory a "matcha"
-   $ pwd # Present Working Directory
-   /Users/bedu/Documents/matcha
-   $ touch index.html # Crea archivo "index.html"
-   $ ls # Lista contenido
-   index.html
-   ```
+No te preocupes si tienes Sistema Operativo Mac Os, **no tendrás problema con los comandos que utilizaremos en los siguientes ejemplos.**
 
-¡Genial! Acabas de crear la estructura mínima de tu proyecto usando la terminal
-de tu computadora, ahora tienes el poder sobre ella y poco a poco te irás
-olvidando de tu _mouse_ o _touchpad_. Lo que acabas de crear debe tener una
-estructura similar a:
+![](https://lh5.googleusercontent.com/kMOOnqrJ1ivvM4LCnyGoHBacI9UtVBi4O2kGU00XRy4_WM7hsavORrNW78J-bzifkkSKD3LF_5v-pHloTQC2u7Yv6nj5xyp5K0xdNKgVYEKteyINxW1SChDYC0sByw9IWYp_Ux8o)
 
-```text
-Documents/
-└── matcha/
-    └── index.html
+💡 **TIP:**
+
+La terminal también es comúnmente llamada como consola, CLI, bash (no necesariamente bien usado), shell (a pesar que no es lo mismo) y tal vez te encontrarás con otro término dependiendo de la persona de quien lo escuches o leas.
+
+# Manos a la obra
+
+Vamos a ver los comandos más utilizados para empezar a usar el emulador de terminal o simplemente llamada terminal.
+
+💡 **Nota:**
+
+No tengas miedo en escribir los comandos, recuerda que la terminal es nuestra amiga. Practica mucho y descubre como la terminal nos ayudará mucho en nuestro día a día como desarrollador.
+
+## Anatomía de un comando
+
+Todos los comandos se componen de:
+
++ Un nombre con el que se invoca el comando.
++ Opciones que modifican el comportamiento del comando. (Son opcionales).
++ Argumentos sobre los que actúa el comando. (También opcionales).
+
+![](https://gblobscdn.gitbook.com/assets%2F-M4zarNtpC-oiRgBYNwB%2F-MJOki7bW2odHmdi2m-Q%2F-MJOnj1bvqKjYI86v6jA%2FUntitled.png?alt=media&token=c8a701a5-32bf-4686-867d-a76adef103b8)
+
+Primero vamos a abrir nuestra terminal, no importa si tienes Sistema Operativo Linux o Mac OS, recuerda si usas Windows utiliza Git Bash.
+
+![](https://lh4.googleusercontent.com/9HttaDwjiVhn8ktMaJyYCApstZj4Pp6v-elLqXZmIeeA6bU13ZSatZAJfjBf9qspyimdy3P4fTmRtT9UjODgDxTdnR3QdrPtSzgWyYC686yq1D3cu8ZQCkv04eVG_eQi13caVz-o)
+
+Una vez abierto nuestro emulador de terminal, vamos a perder el miedo de usar la terminal (la terrible pantalla negra) 😅, después ya no será así.
+
+## Ayuda y Documentación: `man`
+
+Man es uno de los comandos más útiles que podrás encontrar, es por eso que lo ponemos en primer lugar.
+Nos muestra la definición de un comando y de los distintos atributos que se pueden usar.
+
+Para probarlo tan solo deberemos escribir  `man [ comando ]`
+
+```shell
+#Sintaxis
+man [ comando ]
+
+man ls
+
+# Salida
+
+LS(1)                            User Commands                           LS(1)
+
+NAME
+       ls - list directory contents
+
+SYNOPSIS
+       ls [OPTION]... [FILE]...
+
+DESCRIPTION
+       List  information  about  the FILEs (the current directory by default).
+       Sort entries alphabetically if none of -cftuvSUX nor --sort  is  speci‐
+       fied.
+
+       Mandatory  arguments  to  long  options are mandatory for short options
+       too.
+
+       -a, --all
+              do not ignore entries starting with .
+
+       -A, --almost-all
+              do not list implied . and ..
+
+       --author
+ Manual page ls(1) line 1 (press h for help or q to quit)
 ```
 
-### Estructura tu página web
+💡 **Nota:**
 
-#### Concepto: HTML
+Para salir solo escribimos la letra **q**.
 
-Para definir el contenido de nuestra página web, es necesario hacer uso de `HTML`
-(HyperText Markup Language). Este lenguaje de marcado nos permite expresar al
-navegador web (programa que usamos para navegar en internet, ejemplo: Internet
-Explorer, Google Chrome, Mozilla Firefox, Safari, etc) lo que queremos que se
-muestre a través de una sintaxis basada en _etiquetas_.
+## Listar Archivos y Carpetas: `ls`
+
+El siguiente comando que debes conocer es `ls`. Sirve para listar los archivos y carpetas que hay dentro del directorio en el que estés.
+
+### Ej:
+
+Si por defecto estás en `/home/` pues te mostrará todo lo que hay dentro.
+
+```shell
+# Sintaxis
+
+ls [ ruta ]
+
+bedu@bedu ~ ls Documentos/
+
+# Salida
+code Zoom
+```
+
+o si ya **estás en dicho directorio**, escribimos solo el comando `ls`
+
+```shell
+bedu@bedu ~/Documentos ls
+
+# Salida
+
+code Zoom web maqueta_web
+```
+
+## Cambiar de Directorio: `cd`
+
+El comando `cd` sirve para cambiar de directorio,
+
+### Ej:
+
+Si estás en `/home/directorio/` y quieres pasar a `/home/directorio2/`, tendrías que escribir  cd `/home/directorio2/`
+
+```shell
+# Sintaxis
+
+cd [ ruta ]
+
+bedu@bedu ~/cd code
+
+# Salida
+
+bedu@bedu ~/Documentos/code
+```
+
+Si quisieras **pasar al directorio superior** (regresar un nivel),
+
+### Ej:
+
+Si estás en `/home/directorio2/` y quieres regresar a `/home/directorio/`  , tendrías que escribir el comando `cd ..`
+
+## Crear un Nuevo Directorio: `mkdir`
+
+El comando `mkdir` sirve para crear un nuevo directorio.
+
+💡 **Nota:**
+
+Hay que tener en cuenta que lo crea por defecto en el directorio en el que te encuentres (te lo indica siempre en la terminal).
+
+Si quieres crearlo en otro directorio **deberías de incluir la ruta**.
+
+```shell
+# Sintaxis
+
+mkdir [ carpeta ] [ directorio ]
+
+bedu@bedu ~ mkdir Documentos/nuevo_directorio
+
+# Salida
+
+code Zoom nuevo_directorio maqueta_web web
+```
+
+**Protip:**
+
+Recuerda no dejar espacios a la hora de crear nuestras carpetas por que nos podemos confundir al momento de utilizarlas en una terminal, se recomienda usar [estándares de nomenclatura](http://programacion.jias.es/2017/09/estandares-de-nomenclatura-snake-case-kebab-case-camel-case/)
+
+## Crear un Nuevo Archivo: `touch`
+
+El comando touch sirve para crear un nuevo archivo vacío si este no existe.
+
+```shell
+# Sintaxis
+
+touch [ archvivoNuevo ]
+
+bedu@bedu ~/Documentos touch index.html
+bedu@bedu ~/Documentos ls
+
+# Salida
+
+code Zoom nuevo_directorio maqueta_web web index.html
+```
+
+ó si lo queremos crear en otra ruta:
+
+```shell
+# Sintaxis
+
+touch [ ruta ] [ archvivoNuevo ]
+
+bedu@bedu ~ tocuh Documentos/style.html
+bedu@bedu ~ ls Documentos
+
+# Salida
+
+code Zoom nuevo_directorio maqueta_web web index.html style.html
+```
+
+## Borrar un Archivo / Directorio: `rm`
+
+Si queremos borrar algún archivo o directorio podemos hacer uso del comando `rm`.
+
+```shell
+# Sintaxis
+
+rm [ archivo ]
+
+bedu@bedu ~/Documentos ls
+code Zoom nuevo_directorio index.html style.html
+bedu@bedu ~/Documentos rm index.html
+bedu@bedu ~/Documentos ls
+
+# Salida
+
+code Zoom nuevo_directorio maqueta_web  style.html
+```
+
+o bien:
+
+```shell
+# Sintaxis
+
+rm [ ruta ]  [ archivo ]
+
+bedu@bedu ~ ls Documentos
+code Zoom nuevo_directorio style.html
+bedu@bedu ~ rm Documentos/style.html
+bedu@bedu ~/Documentos ls
+
+# Salida
+
+code Zoom nuevo_directorio maqueta_web web
+```
+
+Si queremos borrar un directorio que contenga más archivos, podremos hacer uso del atributo `-rm -r [ directorio ]`
+
+```
+# Sintaxis
+
+-rm -r [ directorio ]
+
+bedu@bedu ~ /Documentos ls
+code Zoom nuevo_directorio
+bedu@bedu ~ /Documentos ls code
+index.html
+bedu@bedu ~ /Documentos rm -r code
+
+# Salida
+
+Zoom nuevo_directorio maqueta_web web
+```
+
+o bien:
+
+```shell
+# Sintaxis
+
+-rm -r [ ruta ] [ directorio ]
+
+bedu@bedu ~ ls Documentos
+Zoom nuevo_directorio web
+
+bedu@bedu ~ rm -r Documentos/web
+
+# Salida
+
+Zoom nuevo_directorio maqueta_web
+```
+
+## Copiar un Archivo / Directorio: `cp`
+
+A la hora de copiar archivos vamos a necesitar el comando cp.
+
+```shell
+# Sintaxis
+
+cp [ ruta Origen ] [ archivo ] [ ruta Destino ]
+
+bedu@bedu ~ /Documentos ls
+Zoom nuevo_directorio maqueta_web
+
+bedu@bedu ~ /Documentos cp maqueta_web/index.html nuevo_directorio
+bedu@bedu ~ /Documentos ls nuevo_directorio
+
+# Salida
+
+index.html
+```
+
+## Mover un Archivo / Directorio: `mv`
+
+Para mover un directorio o archivo haremos uso del  comando `mv`. Esto solo desplaza los archivos sin copiarlos de un directorio a otro.
+Funciona del mismo modo que `cp`, indicando la ruta de origen y la ruta de destino, con la diferencia que ya no vamos a tener nuestro archivo en la carpeta de origen.
+
+```shell
+# Sintaxis
+
+cp [ ruta Origen ] [ archivo ] [ ruta Destino ]
+
+bedu@bedu ~ /Documentos ls
+Zoom nuevo_directorio maqueta_web
+
+bedu@bedu ~ /Documentos cp maqueta_web/style.html nuevo_directorio
+bedu@bedu ~ /Documentos ls nuevo_directorio
+
+# Salida
+
+index.html style.html
+```
+
+## Ver el Contenido de un Archivo: `cat`
+
+`cat` simplemente nos muestra su contenido sin posibilidad de cambiarlo.
+
+```shell
+# Sintaxis
+
+cp [ archivo ]
+
+bedu@bedu ~ /Documentos cd maqueta_web
+bedu@bedu ~ /Documentos/maqueta_web cat index.html
+
+# Salida
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <title>Estoy aprendiendo a usar la terminal 🤓 </title>
+</body>
+</html>
+```
+
+# Git
+
+Git es un sistema de control de versiones, esto quiere decir que te permite mantener un historial de cambios y que puedas ver los cambios realizados en cualquier momento.
+Imagina un documento de Word en el que estás escribiendo un proyecto personal, agregas cierto contenido, luego pides que te lo revisen y te dicen que  reviertas el cambio, **¿cómo lo harías?.**
+
+**Una forma podría ser, crear varios documentos, cada uno con una versión diferente:**
+
+![](https://gblobscdn.gitbook.com/assets%2F-M4zarNtpC-oiRgBYNwB%2F-MJSKiDh3mevgFhwJiwe%2F-MJSLWpbKHq4di2bTaTS%2Fimage.png?alt=media&token=c8770094-588e-4367-9f0d-4fa792c6175b)
+
+Obviamente, esto no es óptimo y menos cuando hacemos desarrollo web porque siempre suceden cambios y a veces es bueno revisar el avance.
+
+**💡TIP:**
+
+En Git una **carpeta** va a ser igual a un **repositorio**.
+Cuando creamos un repositorio en Git, decimos que se encuentra de **forma local**, es decir en nuestra **computadora**.
+
+**Algunas de las características más importantes de Git son:**
+
++ **Rapidez en la gestión de ramas:** debido a que Git nos dice que un cambio será fusionado mucho más frecuentemente de lo que se escribe originalmente.
++ **Gestión distribuida:** Los cambios se importan como ramas adicionales y pueden ser fusionados de la misma manera como se hace en la rama local.
++ **Gestión** eficiente de proyectos grandes.
++ **Realmacenamiento** periódico en paquetes.
+
+## Flujo de trabajo de git
+
+![](https://lh4.googleusercontent.com/lR6HWCiatlbCkeKyhfZrCSBYft9fMrWKV0DussNzxMCoQJnA_0e7wgKThgbcSwcHIT7rJvBEgN-9sCwt2Z6r5OLwlEdSoIaXOjtj_Uc3wPM8uLiIqXxV2_4f1bSALTsI1WJBEYuI)
+
+**Tratando de explicar la imagen:** Tenemos nuestro **directorio local** (una carpeta en nuestro pc) con muchos archivos, Git nos irá **registrando los cambios** de archivos o códigos cuando nosotros le indiquemos, así podremos viajar en el tiempo retrocediendo cambios o restaurando versiones de código, ya sea en **Local** (nuestra pc) o de forma **Remota** (servidor externo).
+En la práctica quedará más claro.
+
+En la práctica quedará más claro. 😉
+
+# GITHUB
+
+**GitHub es un sistema de gestión de proyectos** y control de versiones de código, así como una plataforma de red social diseñada para desarrolladores.
+¿Pero para qué se usa GitHub? Bueno, en general, permite trabajar en colaboración con otras personas de todo el mundo, planificar proyectos y realizar un seguimiento del trabajo.
+GitHub es también uno de los repositorios online más grandes de trabajo colaborativo en todo el mundo.
+
+![](https://lh4.googleusercontent.com/lR6HWCiatlbCkeKyhfZrCSBYft9fMrWKV0DussNzxMCoQJnA_0e7wgKThgbcSwcHIT7rJvBEgN-9sCwt2Z6r5OLwlEdSoIaXOjtj_Uc3wPM8uLiIqXxV2_4f1bSALTsI1WJBEYuI)
+
+💡**TIP:**
+
+Cuando trabajamos con GitHub, decimos que se encuentra de forma remoto, es decir en la [nube](https://azure.microsoft.com/es-es/overview/what-is-the-cloud/).
+
+ # HTML
+
+Para definir el contenido de nuestra página web, es necesario hacer uso de HTML (**HyperText Markup Language**).
+
+HTML es un **lenguaje de marcad**o que nos permite expresar al navegador web (programa que usamos para navegar en internet, ejemplo: Internet Explorer, Google Chrome, Mozilla Firefox, Safari, etc) lo que queremos que se muestre a través de una sintaxis basada en etiquetas.
+
+## ¿Qué son las etiquetas HTML?
+
+Las etiquetas HTML son **fragmentos de código que permiten crear elementos** HTML, estructuras básicas del lenguaje de programación HTML en el que se escriben las páginas web porque es el que entienden los navegadores.
+El formato de una etiqueta HTML es un fragmento de texto encerrado entre corchetes angulares < >, y cada elemento HTML tiene una etiqueta de inicio del tipo `<etiqueta>` y suele terminar con una etiqueta de cierre que lleva una barra inclinada al principio `</etiqueta>`.
+
+**Los elementos HTML tienen dos propiedades básicas:**
+
++ Atributos, que se encuentran en la etiqueta de inicio
++ Contenido, ubicado entre las dos etiquetas
+
+![](https://gblobscdn.gitbook.com/assets%2F-M4zarNtpC-oiRgBYNwB%2F-MJP-gIXhGD5zChkA2bD%2F-MJPGBvwet7Abzo8bjs7%2Fimage.png?alt=media&token=5e0e9671-d10a-4cd8-933d-807841161de0)
 
 La estructura de una etiqueta es como sigue:
 
@@ -175,31 +470,23 @@ La estructura de una etiqueta es como sigue:
 <p class="paragraph">Este es un párrafo</p>
 ```
 
-En el código anterior podemos ver la sintaxis de una imagen y un párrafo en HTML.
-Si los analizamos podemos ver lo siguiente:
+En el código anterior podemos ver la sintaxis de una **imagen y un párrafo** en HTML. Si los analizamos podemos ver lo siguiente:
 
-- Las etiquetas empiezan con `<` seguido del nombre de la etiqueta (`img`, `p`).
-- Separados por espacios encontramos atributos. Estos siguen la sintaxis
-  `nombre-atributo="valor-atributo"`.
-- Los atributos pueden variar dependiendo del tipo de etiqueta (las imágenes
-  usan `src` y `alt` pero los párrafos no).
-- Para denotar el fin de la etiqueta `img`, usamos `/>`.
-- Mientras que para etiquetas como la de párrafo (`p`), la etiqueta de apertura
-  termina con `>`, seguido del contenido de lo que representa la etiqueta, y por
-  último la etiqueta de cierre con la sintaxis (`</nombre-etiqueta>`).
++ Las etiquetas empiezan con `<` seguido del nombre de la etiqueta (`img`, `p`).
++ Separados por espacios encontramos atributos. Estos siguen la sintaxis **nombre-atributo="valor-atributo"**.
++ Los atributos pueden variar dependiendo del tipo de etiqueta (las imágenes usan `src` y `alt` pero los párrafos no).
++ Para denotar el fin de la etiqueta `img`, usamos `/>`.
+Mientras que para etiquetas como la de párrafo (`p`), la etiqueta de apertura termina con >, seguido del contenido de lo que representa la etiqueta, y por último la etiqueta de cierre con la sintaxis (`</nombre-etiqueta>`).
 
-> TIP: Al inicio puede verse complicado identificar que etiquetas se cierran
-> automáticamente (como `<img />`) y cuáles necesitan cerrarse manualmente como
-> la etiqueta `<p></p>`. La clave para comprender esto es que existen etiquetas
-> que pueden tener contenido dentro de ellas (como texto o incluso más etiquetas)
-> mientras que otras etiquetas no pueden contener nada dentro de ellas (como
-> las imágenes).
+**Pro-tip:**
 
-Por último pero no menos importantes, los comentarios son bloques de texto que
-no se muestran en la página web pero que sirve de información importante para
-lxs programadorxs que leen/escriben el código. La sintaxis es `<!--`, seguido
-del texto que queremos comentar y cerrando el comentario con `-->`. Tener en
-cuenta que un comentario no se cierra hasta no encontrar la etiqueta de cierre.
+Al inicio puede verse complicado identificar qué etiquetas se cierran automáticamente como `<img />` y cuáles necesitan cerrarse manualmente como la etiqueta  `<p></p>`.
+
+La clave para comprender esto es que existen etiquetas que pueden tener contenido dentro de ellas (**como texto o incluso más etiquetas**) mientras que otras etiquetas no pueden contener nada dentro de ellas (como las **imágenes**).
+
+Por último pero no menos importantes, los comentarios son bloques de texto que no se muestran en la página web pero que sirve de información importante para los programadores que leen/escriben el código.
+
+La sintaxis es `<!--`, seguido del texto que queremos comentar y cerrando el comentario con `-->`. Tener en cuenta que un comentario no se cierra hasta no encontrar la etiqueta de cierre.
 
 Esto no mostraría nada en la web:
 
@@ -211,474 +498,25 @@ Este párrafo está bien escrito pero no se mostrará por el comentario mal cerr
 </p>
 ```
 
-#### Guía: Creando nuestro HTML
+![](https://lh6.googleusercontent.com/AL25SY8AHimQYO7m_cx3uXjg1jOwMcVKpgnpdcX7E4acH8ycr8oBPnhhclW8qN8qwHNNdLnTKOVL8I2nOmzJS6pWX1JVur5eOQ9ykmAcFXUleFVF89PP8aRSOwEG8xSxDi5OZkUB)
 
-Es momento de abrir nuestro editor de texto (ejemplo: Visual Studio Code) y
-abrir el directorio que creamos en dicho editor, selecciona tu archivo
-`index.html` y prepárate para ensuciarte las manos.
+# CSS (Cascading Style Sheets)
 
-Las etiquetas mínimas a incluir en todos los documentos de HTML que creemos son:
+Es un lenguaje de estilos que nos permite **personalizar la apariencia de los elementos** que hemos agregado en nuestro HTML.
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Aquí va información importante pero no visible dentro del navegador -->
-    <title>Matcha</title>
-  </head>
-  <body>
-    <!-- Esto es lo que se verá en el navegador web -->
-  </body>
-</html>
-```
+Los estilos se aplican a través de selectores, que es una sintaxis particular para saber qué elemento queremos personalizar su apariencia.
 
-Analicemos las etiquetas del código anterior:
-
-- `<!DOCTYPE html>`. Esta etiqueta rompe con el patrón de las sintaxis vistas
-  anteriormente, pero no te preocupes, es una de las únicas que tienen una
-  sintaxis particular y la usarás para indicarle al navegador web la versión
-  de HTML que usarás. En este caso, esta sintaxis está indicando que usaremos
-  `HTML 5`. Resulta que `HTML` ha pasado por diversas versiones, la diferencia
-  entre ellas son principalmente las capacidades que estas soportan, por ejemplo,
-  más adelante te darás cuenta que existen etiquetas que te ayudarán a expresar
-  mejor el tipo de contenido que estas reflejarán al navegador (ejemplo: `nav`,
-  `section`, `header`, `footer`, entre otras) que en versiones anteriores del
-  lenguaje no existían.
-
-  Ejemplo de cómo indicar al navegador que usaremos HTML 4:
-
-  ```html
-  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-  ```
-
-  ¿Mejor nos quedamos con `HTML 5` no?
-
-- `<html></html>`. Es momento de que te enteres que todo en HTML es una
-  estructura jerárquica, y como en toda jerarquía siempre existe un extremo a
-  partir del cual todo inicia. Esta es la etiqueta que indica el punto de partida
-  de la página, todo lo que se encuentre dentro será el contenido que el
-  navegador tomará en cuenta para mostrar a lxs usuarixs. Esta etiqueta en
-  particular tiene 2 _"hijos"_ que encontrarás en todas las páginas web:
-  `<head></head>` y `<body></body>`.
-
-- `<head></head>`. En esta etiqueta se encontrará toda la información relevante
-  del sitio web pero que no se muestran como tal. Por ejemplo, acá podemos
-  indicar el título de la página, el ícono, si debe de importar algún estilo que
-  personalice la apariencia de nuestro contenido, información de la descripción
-  de la página para que se muestren en los resultados de búsqueda de internet,
-  etc.
-
-- `<title></title>`. Esta etiqueta permite indicar cuál es el título que el
-  navegador debe mostrar cuando un usuario este navegando en nuestro sitio web.
-
-- `<body></body>`. Esta etiqueta nos sirve para delimitar todo el contenido de
-  la página web y es dentro de esta que encontramos todo lo que vemos cada vez
-  que visitamos un sitio. Botones, textos, imágenes y demás se definen dentro
-  de esta etiqueta.
-
-#### Guía: Agregando el home de Matcha
-
-Siguiendo el diseño del sitio original de [`Matcha`](https://getmatcha.com),
-podemos ver que lo primero que nos muestra son textos de diferentes tamaños y
-colores además de un formulario y una imagen.
-
-Para agregar el texto principal podríamos usar un párrafo (etiqueta `<p></p>`),
-sin embargo, este texto quiere reflejar lo que nos permite realizar el servicio
-de `Matcha` y por ende dar un mayor énfasis y diferenciarlo de los demás textos.
-
-Para lograr este efecto _semántico_ en nuestro sitio web, podemos usar los
-_headings_ (encabezados). Estos nos ayudan a dar un énfasis jerárquico de
-acuerdo al número que nosotros utilicemos, siendo posible usar del 1 al 6,
-con 1 como el de mayor peso jerárquico y 6 lo contrario.
-
-En este caso, queremos el texto inicial es el de mayor peso jerárquico por lo
-que usaremos el heading de peso 1, y esto lo indicamos haciendo uso de la
-etiqueta `<h1></h1>`.
-
-Aplicándolo a nuestro código existente:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Aquí va información importante pero no visible dentro del navegador -->
-    <title>Matcha</title>
-  </head>
-  <body>
-    <!-- Esto es lo que se verá en el navegador web -->
-    <h1>Build your blog. Build your business.</h1>
-  </body>
-</html>
-```
-
-Abre este archivo en tu navegador y mira el resultado. ¡Tu primera página web!
-Claro, solo es un texto, pero es un gran primer paso!
-
-##### Challenge: Segundo texto
-
-Así que, ¿por qué no le agregamos el siguiente texto que encontramos en la web
-de `Matcha`? ¿Qué peso jerárquico y por ende qué etiqueta le pondrías al
-encabezado? ¿Y si fuese un párrafo en vez de un encabezado? ¿Cuál sería la
-diferencia?
-
-##### Posible solución
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Aquí va información importante pero no visible dentro del navegador -->
-    <title>Matcha</title>
-  </head>
-  <body>
-    <!-- Esto es lo que se verá en el navegador web -->
-    <h1>Build your blog. Build your business.</h1>
-    <h4>
-      Instantly publish articles, drive more traffic, grow your email list, and
-      see your blog’s impact on sales.
-    </h4>
-    <!-- O usando un párrafo -->
-    <!--
-      <p>
-        Instantly publish articles, drive more traffic, grow your email list,
-        and see your blog’s impact on sales.
-      </p>
-    -->
-  </body>
-</html>
-```
-
-La principal diferencia es el peso semántico que le queremos dar al texto, si
-el texto que queremos mostrar no es necesariamente diferente a cualquier otro
-texto que tengamos en la web, probablemente un párrafo funcione bien y luego
-podríamos cambiar su apariencia para darle los efectos visuales deseados, sin
-embargo, si deseamos resaltar dicho texto sobre otros existentes, podemos usar
-un encabezado para darle una jerarquía y diferenciarlo de los demás.
-
-#### Challenge: Texto promocional
-
-¿Cómo harías para agregar el texto promocional? ¿Te has dado cuenta que dentro
-del mismo texto hay algunas palabras que tienen un mayor énfasis (formato en
-_negrita_)? ¿Cómo harías para cambiar el formato de solo esas palabras?
-
-Probablemente ya habrás pensado que existe una etiqueta para eso, no te
-intimides y pregúntale a San Google (se volverá en uno de tus mejores amigos).
-
-#### Guía: Agregando un formulario
-
-Los formularios en HTML hacen uso de etiquetas particulares para denotar el tipo
-de _control_ (caja de texto, botones, etc) que se va a usar en el formulario.
-
-La mayoría de cajas de texto se definen con la etiqueta `<input />` y su
-comportamiento por defecto depende del uso del valor de un atributo, llamado
-`type`. Esta etiqueta no lleva contenido dentro de la misma, por lo que la
-manera de cerrar la etiqueta es automática usando `/>` en vez de `</input>`.
-
-El `input` más común usado en los formularios es:
-
-```html
-<input type="text" />
-```
-
-Usando este tipo de _input_, la web mostrará una caja de texto que permitirá
-ingresar cualquier tipo de texto (números, letras, caracteres especiales, etc),
-mientras que usando otros tipos podemos agregar algunas validaciones por defecto
-que tenga el navegador. En este formulario, tenemos necesitamos obtener un
-correo electrónico del usuario. Para este caso, usaremos el tipo `email`.
-
-```html
-<input type="email" />
-```
-
-Para terminar el formulario necesitamos agregar un botón, y eso lo logramos a
-través de la etiqueta `<button></button>`. Debido a que el texto del botón se
-pone entre las etiquetas, el cerrado de la etiqueta no es automático. Además del
-texto es importante indicar el tipo de acción que realizará cuando se le de
-click al botón. En este caso queremos que el formulario envíe el correo que el
-usuario ingresa y por ende el tipo es a usar es `submit`.
-
-Un detalle importante es que los controles de formulario deben estar contenidos
-por una etiqueta `<form></form>`. Nuestro HTML del formulario quedaría así:
-
-```html
-<form>
-  <input type="email" />
-  <button type="submit">
-    Try it now &rarr;
-  </button>
-</form>
-```
-
-Este formulario por si solo no hará ninguna acción, por el momento solo
-dejaremos que esté visible, la funcionalidad la dejaremos para después.
-
-#### Challenge: Agregando la imagen
-
-Es tu turno de agregar la última parte de la estructura que tenemos pensado para
-esta sesión, la imagen. La cual puedes obtenerla desde este [link](https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png).
-
-No dudes en googlear, preguntar al experto y tus compañeros y probar todo lo
-que te imagines. Recuerda que tu máquina no se malogrará si pones una etiqueta
-que no existe o que está mal escrita.
-
-#### Concepto: CSS
-
-CSS (Cascading Style Sheets) es un lenguaje de estilos que nos permite
-personalizar la apariencia de los elementos que hemos agregado en nuestro HTML.
-
-Los estilos se aplican a través de _selectores_, que es una sintaxis particular
-para saber qué elemento queremos personalizar su apariencia. La sintaxis se ve
-así:
+**La sintaxis es la siguiente:**
 
 ```css
-selector {
-  nombre-propiedad: valor-propiedad;
+selector{
+    nombre-propiedad: valor-propiedad;
+}
+
+/*Ejemplo*/
+
+body{
+    background-color: red;
 }
 ```
-
-Para agregar el CSS tenemos que crear un archivo, para eso nos vamos a la
-terminal y creamos un archivo `styles.css`.
-
-```bash
-$ pwd
-/Users/bedu/Documents/matcha
-$ touch styles.css
-$ ls
-index.html    styles.css
-```
-
-Al agregarlo, nuestro editor lo mostrará en el explorador de archivos,
-selecciona el archivo para comenzar agregar los estilos.
-
-#### Guía: Agregando color al texto principal
-
-La primera propiedad que veremos será la de `color` y la usaremos para cambiar
-el color de los textos que hemos agregado.
-
-Los valores de los colores pueden ser expresados de diversas maneras, en este
-caso usaremos el formato hexadecimal. El texto de la página original usa el
-color `#025157`. Y este color debemos aplicarlo al elemento `h1`, por lo que
-nuestro CSS se vería así:
-
-```css
-h1 {
-  color: #025157;
-}
-```
-
-Recarga tu navegador para que puedas ver los cambios reflejados. ¡Ahora ya tienes
-tu texto con color!
-
-#### Challenge: Cambia los colores
-
-Los colores que van a aplicar son los siguientes:
-
-- Texto que va debajo del título: `#46484c`
-- Texto promocional: `#8b8b8bcc`
-- Texto del botón: `#fff`
-
-#### Challenge: Cambia el color de fondo
-
-Ahora te toca buscar, ¿qué propiedad usarías para cambiar el color de fondo?
-¿Qué selector usarías para cambiar el color de fondo de toda la página?
-
-Los colores a usar son:
-
-- Color de fondo de la página: `#fffbf7`
-- Color de fondo del botón: `#025157`
-
-Ya está lista tu página para poder subirla a internet, para esto primero debes
-tenerla pública en algún lugar. Eso lo veremos a continuación.
-
-#### Concepto: Git y Github
-
-Git es un sistema de control de versiones, esto quiere decir que te permite
-mantener un historial de cambios y que puedas ver los cambios realizados en
-cualquier momento.
-
-Imagina un documento de Word en el que estás escribiendo un proyecto personal,
-agregas cierto contenido, luego pides que te lo revisen y te dicen que reviertas
-el cambio, ¿cómo lo harías?. Una forma podría ser, crear varios documentos, cada
-uno con una versión diferente:
-
-- Proyecto_v1.docx
-- Proyecto_v2.docx
-- Proyecto_final.docx
-- Proyecto_final_ahora_si.docx
-- Proyecto_por_favor_termina.docx
-
-Obviamente, esto no es óptimo y menos cuando hacemos desarrollo web porque
-siempre suceden cambios y a veces es bueno revisar el avance.
-
-`Git` es la solución en el desarrollo de software ante este problema. Para esto,
-primero debemos de decirle a Git que comience a ver los cambios de nuestro
-proyecto:
-
-```bash
-$ pwd
-/Users/bedu/Documents/matcha
-$ git init # Inicia el repositorio que Git seguirá
-Initialized git repository.
-```
-
-Con esto ya le hemos dicho a Git que comience a seguir los cambios, hay un
-comando que nos permite saber qué cambios hemos realizado:
-
-```bash
-$ git status # Cambios que hemos realizado
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-        created:   index.html
-        created:   styles.css
-
-no changes added to commit (use "git add" and/or "git commit -a")
-```
-
-Para que estos cambios sean guardados, debemos agregarlos a un registro llamado
-`staging directory`, esto lo logramos aplicando el comando `git add` seguido del
-nombre de archivo que queremos agregar.
-
-```bash
-$ git add index.html
-$ git add styles.css
-$ git status
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-        created:   index.html
-        created:   styles.css
-```
-
-> TIP: Si tienes muchos archivos y no deseas agregar uno por uno, puedes hacerlo
-> usando `git add -A` y si te encuentras en la carpeta principal del proyecto,
-> también puedes usar `git add .`.
-
-Por último hay que crear la versión del proyecto con una descripción que nuestro
-yo del futuro nos permita recordarlo fácilmente. Eso lo logramos con el comando
-`git commit`.
-
-```bash
-$ git commit -m "Agrega estructura inicial del proyecto"
-```
-
-Con esto ya tenemos listo una versión, pero no es suficiente, qué pasa si
-quieres seguir avanzando este proyecto en otro computador. Probablemente tendrías
-que almacenar tu proyecto en un USB y copiarlo cada vez que lo quieras usar.
-Esto no es óptimo para nada, por lo cual vamos a enlazar nuestro proyecto con
-una plataforma en la nube llamada Github.
-
-Para esto, crearemos un repositorio en Github, el cual nos permitirá almacenar
-nuestras versiones en internet y a la vez tener un lugar accesible desde
-cualquier computador en cualquier momento.
-
-Una vez creado el repositorio, Github nos proveerá una URL para enlazar nuestro
-proyecto. Se verá algo como: `https://github.com/<nombre-usuario>/<nombre-proyecto>.git`.
-
-```bash
-$ git remote add origin https://github.com/<nombre-usuario>/<nombre-proyecto>.git
-```
-
-Con esto, hemos enlazado el proyecto a un repositorio de Github y le hemos puesto
-un alias llamado `origin`.
-
-Para subir los cambios a Github, debemos de subirlo a través del alias que estamos
-usando:
-
-```bash
-$ git push origin master
-```
-
-En este comando (`git push`) le hemos dicho a dónde con el alias `origin` y le
-hemos dicho en qué rama, `master`, y que este concepto por el momento no lo
-definiremos pero será muy importante comprenderlo.
-
-Si ingresas al link del repositorio, podrás ver que están tus archivos `index.html`
-y `styles.css`. Más adelante veremos como recuperar dichos cambios.
-
-#### Challenge: Sube una nueva versión a Github
-
-Agrega cambios de CSS a tu proyecto, puede ser el color o cualquier otra propiedad
-que te llamó la intención probar. Luego sigue los comandos de Git que acabas de
-ver para subir un nuevo cambio.
-
-### Sube tu página web a internet
-
-El proceso de publicar tu página web en internet es conocido en el lenguaje
-coloquial de programadorxs como `deploy` y es lo que vamos a hacer ahora.
-
-Para hacer `deploy` de un sitio web hay muchas formas y dependen en ocasiones
-de diversos factores como el servicio de hosting que tengas pensado usar, el
-lenguaje de programación que usas para procesar las peticiones, entre otros.
-
-En nuestro caso, la web está basada únicamente en HTML y CSS, y en este módulo
-solo le agregaremos algunos recursos estáticos (imágenes, fuentes) y tal vez
-algo muy mínimo de JavaScript. A este tipo de sitios se les conoce como web
-estáticas, y cualquier servicio de hosting soporta archivos estáticos.
-
-> TIP: Hosting es el servicio de hospedaje que se mantiene activo para que
-> cualquier usuario tenga acceso a nuestra web a través de internet. Imagina que
-> es una computadora que no es controlada por ti, pero que se mantiene encendida
-> y conecta a internet todo el tiempo, de tal manera que cuando alguien consulte
-> tu sitio, esta computadora se encargue de indicar el HTML, CSS y demás recursos
-> que se deben mostrar.
-
-El servicio que usaremos para _deployar_ nuestro sitio será [Netlify](https://www.netlify.com/).
-Una herramienta moderna, fácil de usar y gratuita que nos ayudará a hospedar
-nuestro proyecto en internet.
-
-#### Guía: Subiendo el proyecto a Netlify
-
-Lo primero que debemos hacer, es registrarnos en el sitio de [Netlify](https://www.netlify.com/).
-Te recomendamos que utilices tu cuenta de GitHub como registro ya que en caso de
-utilizar otro método, más adelante será necesario que se vincule de todas maneras.
-
-Una vez dentro de la plataforma de Netlify con la sesión inciada, nos aparecerá
-una sección llamada `Sites` mostrando una barra de búsqueda y un botón con el
-texto `New site from Git`. Daremos clic a dicho botón:
-
-![Paso 1 - Crear un sitio desde Git](./assets/step-1.png)
-
-Esta nos llevará a otra pantalla en la cual tendremos que seleccionar el
-proveedor de proyectos basado en Git donde se encuentra nuestro repositorio.
-En nuestro caso, seleccionaremos GitHub el cual estamos usando:
-
-![Paso 2 - Seleccionar Github](./assets/step-2.png)
-
-Una vez autorizado el acceso a nuestros repos de GitHub, nos mostrará la lista
-de repositorios que tenemos en nuestra cuenta, seleccionar el del proyecto que
-hemos trabajado durante la sesión de hoy. Luego nos mostrará una pantalla como
-esta:
-
-![Paso 3 - Configuración de deploy](./assets/step-3.png)
-
-En este paso, no es necesario realizar ningún cambio ya que nuestro sitio
-respeta las convenciones usadas por defecto y no usa ninguna herramienta de
-optimización como veremos en futuras sesiones. Procedemos a dar clic en el botón
-`Deploy site` y nos mostrará:
-
-![Paso 4 - Sitio desplegado](./assets/step-4.png)
-
-Aquí podrás ver que se ha generado una URL aleatoria, en la cual si le das clic,
-podrás ver el resultado final:
-
-![Paso 5 - Resultado final](./assets/step-5.png)
-
-Con esto, ya tienes tu sitio publicado en internet y un link que cualquiera
-puede ver. Así que, ¡comparte con tus amigxs y familiares lo que has logrado en
-tu primera sesión!
-
-> TIP: El nombre aleatorio que Netlify genera en el link es algo complejo de
-> memorizar y no se ve muy amigable como para compartirlo en redes sociales,
-> no te preocupes, este se puede configurar en la pantalla donde te avisó que
-> tu sitio estaba listo, atrévete a experimentar y cambia el nombre del dominio
-> para que se vea más cool y sea más fácil de recordar con quienes lo compartas.
-
-
+![](https://lh6.googleusercontent.com/6-kMuqHi5sHn7Qi7cVQPV0JegLBiXj2uqssMzPc-B_oY5tRMOe256i_9ExYPO12PGSvjF969rh7VTP_TjC_Pp_W6-GJ0246a6UWa-okgwlA3gBS6vMG60NL-4h3FKUFY5Q84Hi6R)
