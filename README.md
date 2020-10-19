@@ -26,11 +26,11 @@ contacto.
 
 ## 📋 Temario
 
-- [Terminal y Git](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-01)
-- [HTML](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-02)
-- [CSS](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-03)
-- [Responsive Design](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-04)
-- [CSS Frameworks](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-05)
-- [Preprocesadores de CSS](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-06)
-- [Email development](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-07)
-- [Deploy de un sitio estático](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-08)
+- [`Terminal y Git`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-01)
+- [`HTML`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-02)
+- [`CSS`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-03)
+- [`Responsive Design`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-04)
+- [`CSS Frameworks`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-05)
+- [`Preprocesadores de CSS`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-06)
+- [`Email development`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-07)
+- [`Deploy de un sitio estático`](https://github.com/beduExpert/A1-Frontend-Fundamentals-Santander/tree/main/sesion-08)
