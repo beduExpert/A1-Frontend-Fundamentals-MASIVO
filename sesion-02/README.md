@@ -46,7 +46,7 @@ Algunas de esas etiquetas son:
 
 En esta lista de [**MDN**](https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos#Secciones) puedes revisar para que se utilizan cada una de estas etiquetas semánticas.
 
-️### Pregunta:
+### Pregunta:
 
 Viendo la [**barra de navegación del sitio**](https://bedu-fef.netlify.app/) original de Matcha.
 
