@@ -1,4 +1,4 @@
-# Sesión: Agregando filas y columnas con CSS Grid
+# Sesión 04: Agregando filas y columnas con CSS Grid
 
 Sigue el contenido a continuación durante clase para que no te pierdas ningún
 detalle de lo que estás a punto de aprender.
