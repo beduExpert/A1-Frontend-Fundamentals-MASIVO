@@ -1,4 +1,4 @@
-# Sesión: Bootstrap
+# Sesión 06: Bootstrap
 
 Sigue el contenido a continuación durante clase para que no te pierdas ningún
 detalle de lo que estás a punto de aprender.
