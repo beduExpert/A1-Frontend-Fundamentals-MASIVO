@@ -1,4 +1,4 @@
-# Sesión: Agregando la barra de navegación
+# Sesión 03: Agregando la barra de navegación
 
 Sigue el contenido a continuación durante clase para que no te pierdas ningún
 detalle de lo que estás a punto de aprender.
