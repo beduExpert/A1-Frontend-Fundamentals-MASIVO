@@ -60,5 +60,3 @@ Los **breakpoints** son las condiciones que nosotros establecemos, normalmente e
 En el ejemplo estamos diciendo que todos los dispositivos que tengan un **ancho máximo de 575px** tendrá un color de fondo amarillo, si pruebas esto en tu proyecto, verás que en una vista móvil el fondo será amarilla, pero si sales del emulador, tu página volverá a tener el color de fondo que tenía antes.
 
 **Este es el poder que los media queries te dan.**
-
-Nosotros trabajaremos con los [**siguientes breakpoints**](https://getbootstrap.com/docs/4.1/layout/overview/) para personalizar nuestros estilos.
