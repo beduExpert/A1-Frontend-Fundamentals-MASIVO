@@ -59,7 +59,7 @@ las columnas y filas respectivamente. Veamos un ejemplo, necesitamos definir que
 tenemos 2 columnas, imaginemos que sean de `300px`:
 
 ```css
-.features {
+m {
   display: grid;
   grid-template-columns: 300px 300px;
 }
@@ -120,3 +120,19 @@ que cada una ocupe la mitad del espacio disponible, de esta manera si tuviéramo
 cuatro columnas cada una con el ancho de `1fr`, cada columna estará tomando un
 ancho del 25% del espacio disponible o 1/4 (depende de que notación les guste y
 entiendan mejor).
+
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    
+    
+    
+  }
+
+  article{
+    background-color: aqua;
+    margin: 10px;
+    width: 40% ;
+    height: 50px;
+  }
