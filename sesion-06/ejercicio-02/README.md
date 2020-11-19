@@ -75,8 +75,4 @@ que nos da Bootstrap y adaptarla a lo que nosotros necesitamos:
 </body>
 ```
 
-Debería verse algo similar a:
 
-![Barra de navegación de ejemplo de Bootstrap agregada](../assets/bootstrap-default-navbar.png)
-
-¡Vamos a adaptarla a lo que necesitamos!

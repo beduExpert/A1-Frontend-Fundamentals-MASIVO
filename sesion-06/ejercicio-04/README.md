@@ -3,9 +3,7 @@
 Si activamos el emulador de responsive para nuestra web veremos que un
 comportamiento diferente sucede en nuestra barra de navegación:
 
-![Responsive navbar](../assets/responsive-navbar.png)
 
-z
 ![Responsive navbar mostrándose otra vez](../assets/responsive-navbar-2.png)
 
 Notaremos que ahora tenemos una especie de ícono (comunmente llamado
