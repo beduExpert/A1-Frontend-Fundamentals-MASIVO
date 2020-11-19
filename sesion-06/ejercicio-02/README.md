@@ -1,44 +1,12 @@
 # Agregando el navbar
 
-Comencemos por comentar la barra de navegación que actualmente tenemos para
-evitar que se mezcle con la barra de navegación de Bootstrap.
-
-```html
-<body>
-  <!-- Esto es lo que se verá en el navegador web -->
-  <!-- <section class="fixed-header">
-    <header class="header">
-      <a href="/" class="logo">
-        <img
-          src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
-          alt="Matcha"
-        />
-      </a>
-      <nav class="navbar">
-        <ul class="menu">
-          <li class="menu-item">Platform</li>
-          <li class="menu-item">Pricing</li>
-          <li class="menu-item">Customers</li>
-          <li class="menu-item">Resources</li>
-          <li class="menu-item">About</li>
-        </ul>
-      </nav>
-      <div class="actions">
-        <a>Sign In</a>
-        <button>Start free trial</button>
-      </div>
-    </header>
-  </section> -->
-</body>
-```
-
 De tal forma podemos agregar la [barra de navegación de ejemplo](https://getbootstrap.com/docs/4.4/components/navbar/#supported-content)
 que nos da Bootstrap y adaptarla a lo que nosotros necesitamos:
 
 ```html
 <body>
   <!-- Nuestra barra de navegación comentada va aquí -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light ">
     <a class="navbar-brand" href="#">Navbar</a>
     <button
       class="navbar-toggler"
