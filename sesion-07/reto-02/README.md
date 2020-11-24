@@ -13,6 +13,8 @@ Bootstrap y los estilos por clase en nuestro Sass, no deberíamos necesitar de
 ningún cambio en el SCSS al menos que nos falte personalizar algo. Es tu turno
 de agregar la última columna y quedar listos con el blog.
 
+Utiliza Sass para terminar de maquetar nuestras Blog 
+
 <details>
   <summary>Posible solución</summary>
 

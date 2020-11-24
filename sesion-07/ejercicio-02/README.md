@@ -155,14 +155,14 @@ De esta forma ya hemos creado valores que a través de un identificador, podemos
 usarla en nuestro código. Probablemente te quede una duda, cómo vamos a hacer
 para que nuestro `main.scss` use los valores que hemos definido en otro archivo
 llamado `_global.scss`. Para esto aprovecharemos la característica de módulos de
-Sass, que a través de una regla llamada [`@use`](https://sass-lang.com/documentation/at-rules/use)
+Sass, que a través de una regla llamada @import './global';
 podemos indicar que tenga acceso a las variables definidas en el otro archivo.
 
 Utilicemos `@use` para usar nuestras variables en el archivo `main.scss`:
 
 ```scss{2,5}
 /** main.scss */
-@use 'global' as *;
+@import './global';  o  @import './_global';
 
 .blog {
   background-color: $white;
@@ -171,18 +171,12 @@ Utilicemos `@use` para usar nuestras variables en el archivo `main.scss`:
 }
 ```
 
-Dado que `@use` hace uso de un _namespace_ para identificar todas las variables
-que se exportan desde el módulo que indicamos, en nuestro caso le hemos puesto
-un `*` para no tener que estar escribiendo un nombre de espacio antes de cada
-vaiable que queramos usar. A su vez, hicimos la prueba cambiando el color de
-fondo de la sección usando la variable `$white` que definimos en el otro archivo.
-
 Ahora si estamos listos para agregar nuestros estilos a la primera columna,
 empecemos por el título:
 
 ```scss{9-11}
 /** main.scss */
-@use 'global' as *;
+@import './global';  o  @import './_global';
 
 .blog {
   background-color: $white;
@@ -206,7 +200,7 @@ Ahora, pongamos un poco de estilos a la lista de procesos:
 
 ```scss{13-20}
 /** main.scss */
-@use 'global' as *;
+@import './global';  o  @import './_global';
 
 .blog {
   background-color: $white;
@@ -236,7 +230,7 @@ más específico:
 
 ```scss{20-31}
 /** main.scss */
-@use 'global' as *;
+@import './global';  o  @import './_global';
 
 .blog {
   background-color: $white;
@@ -275,7 +269,7 @@ Y ahora agreguemos estilos para el ícono de cada uno de los procesos:
 
 ```scss{33-42}
 /** main.scss */
-@use 'global' as *;
+@import './global';  o  @import './_global';
 
 .blog {
   background-color: $white;
@@ -325,7 +319,7 @@ Por último, agreguemos los estilos del botón:
 
 ```scss{33-42}
 /** main.scss */
-@use 'global' as *;
+@import './global';  o  @import './_global';
 
 .blog {
   background-color: $white;

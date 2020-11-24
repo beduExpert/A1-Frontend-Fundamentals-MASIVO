@@ -10,7 +10,6 @@ En esta sesión aprenderás:
 - Sobre preprocesadores de CSS.
 - Optimizar la producción de CSS con Sass.
 - Agregar las secciones restantes de la página original de Matcha.
-- Desplegar los cambios a nuestra página web hosteada en Netlify.
 
 ## Contenido
 
