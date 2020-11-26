@@ -7,10 +7,10 @@
   - Tendras que colaborar con tus compañeros y quedar de acuerdo con las tareas que se le asignaran a cada uno de los integrantes del equipo.
 
 
-  - Maquetaran el proyecto de getmatcha desde cero , tendran que usar todos los conocimientos aprendidos menos Bootstrap. 
+  - Maquetaran el proyecto de getmatcha desde cero , tendran que usar todos los conocimientos aprendidos. 
 
 
-  - No se olviden de los conceptos Basicos  de Html , Css asi como los conceptos de  MediaQuerys, FlexBox , Grid, Sass.
+  - No se olviden de los conceptos Basicos  de Html , Css asi como los conceptos de  MediaQuerys, FlexBox , Grid, Bootstrap, Sass.
 
 
   - Los requerimientos son de nuestra parte, ver que aplican los temas que vimos durante esta primera fase.
